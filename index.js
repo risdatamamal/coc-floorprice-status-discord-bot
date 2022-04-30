@@ -27,6 +27,7 @@ function getPrices() {
           .me.setNickname(
             `FP: ${floorPriceNew
               .toLocaleString()
+              .substring(0, 5)
               .replace(/,/g, process.env.THOUSAND_SEPARATOR)}${
               process.env.CURRENCY_SYMBOL
             }`
